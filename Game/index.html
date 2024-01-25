@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lie" id="Lie">
+        <h1 id="title">
+            Lie Detector
+        </h1>
+        <h2 id="namety">
+            Enter Your Full Name</h2><br>
+            <input type="text"id="q1"><br>
+            <input type="button" value="Detect" onclick="lied()">
+    </div>
+    <script>
+        function lied(){
+            var name=document.getElementById("q1").value;
+            if(name=="Sujan Neupane" || name=="Prabash Sapkota"||name=="Shiva Pokhrel" || name=="Ram Kundan Baniya" ||name=="Divya Pandey" ||name=="Rukhsana Nisha" ||name=="Veshraj " ||name=="Khem Narayan Chauhan"  ||name=="Aditya Gharti Magar"||name=="Anush Kalikota"||name=="Suraj Pandeya"||name=="Aashika Poudel"||name=="Rakesh Harijan"){
+                document.body.style.backgroundColor="green";
+                document.getElementById("title").innerHTML="True";
+
+                document.body.style.color="white";
+            }
+            else{
+                document.body.style.backgroundColor="red";
+                document.getElementById("title").innerHTML="False";
+                document.getElementById("namety").innerHTML="Try Again......";
+
+                document.body.style.color="white";
+
+            }
+        }
+    </script>
+</body>
+</html>
